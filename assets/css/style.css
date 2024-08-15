@@ -1783,7 +1783,7 @@ img {
 }
 
 .header-style-1 .navbar-brand, .header-style-2 .navbar-brand, .header-style-3 .navbar-brand {
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 @media (max-width: 991px) {
