@@ -1,0 +1,1 @@
+# hofiex initgit add README.mdgit commit -m first commitgit branch -M maingit remote add origin git@github.com:skashfaq098/hofiex.gitgit push -u origin main
