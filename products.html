@@ -29,47 +29,57 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        .grid-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-            justify-content: center;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 16px;
-        }
-        .grid {
-            width: 250px;
-            height: 250px; /* Adjust height as needed */
-            padding: 20px;
-            color: white;
-            text-align: center;
-            background-color: #ffffff; /* Fallback background color */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-bottom: 16px;
-            position: relative;
-            overflow: hidden; /* Ensure the image does not overflow */
-        }
-        .grid img {
-            max-width: 100%;
-            max-height: 60%; /* Restrict image height to 60% of card height */
-            display: block;
-            margin: 0 auto 10px; /* Center the image horizontally and add space below */
-        }
-        .grid h4 {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-        .grid a {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-        }
+    <style>* {
+        box-sizing: border-box;
+    }
+    
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 16px;
+    }
+    
+    .grid {
+        width: 250px;
+        height: 250px;
+        padding: 20px;
+        color: black;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 16px;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Added transition for smooth effect */
+    }
+    
+    .grid img {
+        max-width: 100%;
+        max-height: 60%;
+        display: block;
+        margin: 0 auto 10px;
+    }
+    
+    .grid h4 {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    
+    .grid a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    
+    .grid:hover {
+        transform: scale(1.05); /* Scale up slightly on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance the shadow for a lifted effect */
+    }
     </style>
    
 </head>
@@ -88,7 +98,7 @@
                     </svg>
                 </div>
                 <div class="gear three">
-                    <svg viewbox="0 0 100 100" fill="#fd5f17">
+                    <svg viewbox="0 0 100 100" fill="#3fb7f6">
                         <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
                     </svg>
                 </div>
@@ -123,7 +133,32 @@
                             <li class="menu-item-has-children">
                                 <a href="products.html">Products</a>
                                 <ul class="sub-menu">
-                                
+                                    <li class="menu-item-has-children">
+                                        <a href="composit-hose.html?categoryId=cat10">Hydraulic Rubber Hose</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-1">Medium Pressure Thermo Plastic Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-2">High Pressure Thermo Plastic Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-3">Liquified Petroleum Gas (LPG) Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-4">Steam Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-5">Low Temperature Steam Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-6">High Temperature Steam Hose - Single Wire</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-7">High Temperature Steam Hose - Double Wire</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-8">Oil Suction & Discharge Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-9">Chemical Suction & Discharge Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-10">Acid And Alkali Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-11">Phosphoric Acid Suction & Discharge Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-12">Carbon Free Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-13">Sand / Shot Blasting & Cement Grouting Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-14">Sand And Gravel Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-15">Air, Pneumatic, Rock Drill Hose</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-16">High Pressure Hydraulic Hose - R1</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-17">High Pressure Hydraulic Hose - R2</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-18">High Pressure Hydraulic Hose - R3</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-19">High Pressure Hydraulic Hose - R4</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-20">High Pressure Hydraulic Hose - 4SP Standard</a></li>
+                                            <li><a href="productdetails.html?categoryId=cat10&productId=subcat10-21">End Connections</a></li>
+                                        </ul>
+                                    </li>
                                     <li class="menu-item-has-children">
                                         <a href="composit-hose.html?categoryId=cat1">Metallic Hoses</a>
                                         <ul class="sub-menu">
@@ -213,6 +248,7 @@
                                             <li><a href="productdetails.html?categoryId=cat9&productId=subcat9-2">Hose Fittings</a></li>
                                         </ul>
                                     </li>
+                                    
                                 </ul>
                             </li>
                             <li><a href="contact.html">Contact us</a></li>
@@ -261,106 +297,150 @@
             <script>
                 // Provided JSON data
                 const menu = [
-                    {
-                        "id": "cat1",
-                        "category": "Metallic Hoses",
-                        "url": "#metallic-hoses",
-                        "subCategories": [
-                            { "id": "subcat1-1", "name": "Stainless Steel Metal Hose", "url": "productdetails.html?categoryId=cat1&productId=subcat1-1" },
-                            { "id": "subcat1-2", "name": "High Pressure Stainless Steel Hose", "url": "productdetails.html?categoryId=cat1&productId=subcat1-2" },
-                            { "id": "subcat1-3", "name": "Corrugated Flexible Metal Hose", "url": "productdetails.html?categoryId=cat1&productId=subcat1-3" },
-                            { "id": "subcat1-4", "name": "Jacketed Hose", "url": "productdetails.html?categoryId=cat1&productId=subcat1-4" },
-                            { "id": "subcat1-5", "name": "Standard End Connections", "url": "productdetails.html?categoryId=cat1&productId=subcat1-5" }
-                        ]
-                    },
-                    {
-                        "id": "cat2",
-                        "category": "Composite / Polypropylene Hose",
-                        "url": "#composite-hose",
-                        "subCategories": [
-                            { "id": "subcat2-1", "name": "PTFE Lined Composite Hose", "url": "productdetails.html?categoryId=cat2&productId=subcat2-1" }
-                        ]
-                    },
-                    {
-                        "id": "cat3",
-                        "category": "PTFE Hoses",
-                        "url": "#ptfe-hoses",
-                        "subCategories": [
-                            { "id": "subcat3-1", "name": "PTFE Corrugated Hose", "url": "productdetails.html?categoryId=cat3&productId=subcat3-1" },
-                            { "id": "subcat3-2", "name": "Smooth Bore PTFE Hose", "url": "productdetails.html?categoryId=cat3&productId=subcat3-2" },
-                            { "id": "subcat3-3", "name": "PTFE Lined Hose", "url": "productdetails.html?categoryId=cat3&productId=subcat3-3" },
-                            { "id": "subcat3-4", "name": "Anti-Static PTFE Hose", "url": "productdetails.html?categoryId=cat3&productId=subcat3-4" }
-                        ]
-                    },
-                    {
-                        "id": "cat4",
-                        "category": "Food and Liquid Hose",
-                        "url": "#food-and-liquid-hose",
-                        "subCategories": [
-                            { "id": "subcat4-1", "name": "Foodhose – Type I", "url": "productdetails.html?categoryId=cat4&productId=subcat4-1" },
-                            { "id": "subcat4-2", "name": "Foodhose – Type II", "url": "productdetails.html?categoryId=cat4&productId=subcat4-2" },
-                            { "id": "subcat4-3", "name": "Foodhose – Type III", "url": "productdetails.html?categoryId=cat4&productId=subcat4-3" },
-                            { "id": "subcat4-4", "name": "Foodhose – Type IV", "url": "productdetails.html?categoryId=cat4&productId=subcat4-4" }
-                        ]
-                    },
-                    {
-                        "id": "cat5",
-                        "category": "Expansion Joints",
-                        "url": "#expansion-joints",
-                        "subCategories": [
-                            { "id": "subcat5-1", "name": "Metallic Expansion Joint", "url": "productdetails.html?categoryId=cat5&productId=subcat5-1" },
-                            { "id": "subcat5-2", "name": "Rubber Expansion Joint", "url": "productdetails.html?categoryId=cat5&productId=subcat5-2" },
-                            { "id": "subcat5-3", "name": "PTFE Expansion Joint", "url": "productdetails.html?categoryId=cat5&productId=subcat5-3" }
-                        ]
-                    },
-                    {
-                        "id": "cat6",
-                        "category": "Coupling",
-                        "url": "#coupling",
-                        "subCategories": [
-                            { "id": "subcat6-1", "name": "Quick Release Coupling", "url": "productdetails.html?categoryId=cat6&productId=subcat6-1" },
-                            { "id": "subcat6-2", "name": "Camlock Coupling", "url": "productdetails.html?categoryId=cat6&productId=subcat6-2" },
-                            { "id": "subcat6-3", "name": "Dry Disconnect Coupling", "url": "productdetails.html?categoryId=cat6&productId=subcat6-3" },
-                            { "id": "subcat6-4", "name": "Break-away Coupling", "url": "productdetails.html?categoryId=cat6&productId=subcat6-4" },
-                            { "id": "subcat6-5", "name": "Claw Type / Chicago Type Coupling", "url": "productdetails.html?categoryId=cat6&productId=subcat6-5" },
-                            { "id": "subcat6-6", "name": "SMS Union", "url": "productdetails.html?categoryId=cat6&productId=subcat6-6" },
-                            { "id": "subcat6-7", "name": "Hammer Union", "url": "productdetails.html?categoryId=cat6&productId=subcat6-7" }
-                        ]
-                    },
-                    {
-                        "id": "cat7",
-                        "category": "Valves",
-                        "url": "#valves",
-                        "subCategories": [
-                            { "id": "subcat7-1", "name": "Gate Valves", "url": "productdetails.html?categoryId=cat7&productId=subcat7-1" },
-                            { "id": "subcat7-2", "name": "Globe Valves", "url": "productdetails.html?categoryId=cat7&productId=subcat7-2" },
-                            { "id": "subcat7-3", "name": "Needle Valves", "url": "productdetails.html?categoryId=cat7&productId=subcat7-3" },
-                            { "id": "subcat7-4", "name": "Ball Valves", "url": "productdetails.html?categoryId=cat7&productId=subcat7-4" },
-                            { "id": "subcat7-5", "name": "Manifold Valves", "url": "productdetails.html?categoryId=cat7&productId=subcat7-5" }
-                        ]
-                    },
-                    {
-                        "id": "cat8",
-                        "category": "Mechanical Seals",
-                        "url": "#mechanical-seals",
-                        "subCategories": [
-                            { "id": "subcat8-1", "name": "Component Seal", "url": "productdetails.html?categoryId=cat8&productId=subcat8-1" },
-                            { "id": "subcat8-2", "name": "Cartridge Seal", "url": "productdetails.html?categoryId=cat8&productId=subcat8-2" },
-                            { "id": "subcat8-3", "name": "Wet Seal", "url": "productdetails.html?categoryId=cat8&productId=subcat8-3" },
-                            { "id": "subcat8-4", "name": "Dry Seal", "url": "productdetails.html?categoryId=cat8&productId=subcat8-4" }
-                        ]
-                    },
-                ];
-                // Function to generate the HTML structure
+                {
+                    "id": "cat1",
+                    "category": "Metallic Hoses",
+                    "url": "#metallic-hoses",
+                    "subCategories": [
+                        { "id": "subcat1-1", "name": "Stainless Steel Metal Hose", "url": "productdetails.html?categoryId=cat1&productId=subcat1-1" },
+                        { "id": "subcat1-2", "name": "High Pressure Stainless Steel Hose", "url": "productdetails.html?categoryId=cat1&productId=subcat1-2" },
+                        { "id": "subcat1-3", "name": "Corrugated Flexible Metal Hose", "url": "productdetails.html?categoryId=cat1&productId=subcat1-3" },
+                        { "id": "subcat1-4", "name": "Jacketed Hose", "url": "productdetails.html?categoryId=cat1&productId=subcat1-4" },
+                        { "id": "subcat1-5", "name": "Standard End Connections", "url": "productdetails.html?categoryId=cat1&productId=subcat1-5" }
+                    ]
+                },
+                {
+                    "id": "cat2",
+                    "category": "Composite / Polypropylene Hose",
+                    "url": "#composite-hose",
+                    "subCategories": [
+                        { "id": "subcat2-1", "name": "PTFE Lined Composite Hose", "url": "productdetails.html?categoryId=cat2&productId=subcat2-1" }
+                    ]
+                },
+                {
+                    "id": "cat3",
+                    "category": "PTFE Hoses",
+                    "url": "#ptfe-hoses",
+                    "subCategories": [
+                        { "id": "subcat3-1", "name": "PTFE Corrugated Hose", "url": "productdetails.html?categoryId=cat3&productId=subcat3-1" },
+                        { "id": "subcat3-2", "name": "Smooth Bore PTFE Hose", "url": "productdetails.html?categoryId=cat3&productId=subcat3-2" },
+                        { "id": "subcat3-3", "name": "PTFE Lined Hose", "url": "productdetails.html?categoryId=cat3&productId=subcat3-3" },
+                        { "id": "subcat3-4", "name": "Anti-Static PTFE Hose", "url": "productdetails.html?categoryId=cat3&productId=subcat3-4" }
+                    ]
+                },
+                {
+                    "id": "cat4",
+                    "category": "Food and Liquid Hose",
+                    "url": "#food-and-liquid-hose",
+                    "subCategories": [
+                        { "id": "subcat4-1", "name": "Foodhose – Type I", "url": "productdetails.html?categoryId=cat4&productId=subcat4-1" },
+                        { "id": "subcat4-2", "name": "Foodhose – Type II", "url": "productdetails.html?categoryId=cat4&productId=subcat4-2" },
+                        { "id": "subcat4-3", "name": "Foodhose – Type III", "url": "productdetails.html?categoryId=cat4&productId=subcat4-3" },
+                        { "id": "subcat4-4", "name": "Foodhose – Type IV", "url": "productdetails.html?categoryId=cat4&productId=subcat4-4" }
+                    ]
+                },
+                {
+                    "id": "cat5",
+                    "category": "Expansion Joints",
+                    "url": "#expansion-joints",
+                    "subCategories": [
+                        { "id": "subcat5-1", "name": "Metallic Expansion Joint", "url": "productdetails.html?categoryId=cat5&productId=subcat5-1" },
+                        { "id": "subcat5-2", "name": "Rubber Expansion Joint", "url": "productdetails.html?categoryId=cat5&productId=subcat5-2" },
+                        { "id": "subcat5-3", "name": "PTFE Expansion Joint", "url": "productdetails.html?categoryId=cat5&productId=subcat5-3" }
+                    ]
+                },
+                {
+                    "id": "cat6",
+                    "category": "Coupling",
+                    "url": "#coupling",
+                    "subCategories": [
+                        { "id": "subcat6-1", "name": "Quick Release Coupling", "url": "productdetails.html?categoryId=cat6&productId=subcat6-1" },
+                        { "id": "subcat6-2", "name": "Camlock Coupling", "url": "productdetails.html?categoryId=cat6&productId=subcat6-2" },
+                        { "id": "subcat6-3", "name": "Dry Disconnect Coupling", "url": "productdetails.html?categoryId=cat6&productId=subcat6-3" },
+                        { "id": "subcat6-4", "name": "Break-away Coupling", "url": "productdetails.html?categoryId=cat6&productId=subcat6-4" },
+                        { "id": "subcat6-5", "name": "Claw Type / Chicago Type Coupling", "url": "productdetails.html?categoryId=cat6&productId=subcat6-5" },
+                        { "id": "subcat6-6", "name": "SMS Union", "url": "productdetails.html?categoryId=cat6&productId=subcat6-6" },
+                        { "id": "subcat6-7", "name": "Hammer Union", "url": "productdetails.html?categoryId=cat6&productId=subcat6-7" }
+                    ]
+                },
+                {
+                    "id": "cat7",
+                    "category": "Valves",
+                    "url": "#valves",
+                    "subCategories": [
+                        { "id": "subcat7-1", "name": "Gate Valves", "url": "productdetails.html?categoryId=cat7&productId=subcat7-1" },
+                        { "id": "subcat7-2", "name": "Globe Valves", "url": "productdetails.html?categoryId=cat7&productId=subcat7-2" },
+                        { "id": "subcat7-3", "name": "Needle Valves", "url": "productdetails.html?categoryId=cat7&productId=subcat7-3" },
+                        { "id": "subcat7-4", "name": "Ball Valves", "url": "productdetails.html?categoryId=cat7&productId=subcat7-4" },
+                        { "id": "subcat7-5", "name": "Manifold Valves", "url": "productdetails.html?categoryId=cat7&productId=subcat7-5" }
+                    ]
+                },
+                {
+                    "id": "cat8",
+                    "category": "Mechanical Seals",
+                    "url": "#mechanical-seals",
+                    "subCategories": [
+                        { "id": "subcat8-1", "name": "Component Seal", "url": "productdetails.html?categoryId=cat8&productId=subcat8-1" },
+                        { "id": "subcat8-2", "name": "Cartridge Seal", "url": "productdetails.html?categoryId=cat8&productId=subcat8-2" },
+                        { "id": "subcat8-3", "name": "Wet Seal", "url": "productdetails.html?categoryId=cat8&productId=subcat8-3" },
+                        { "id": "subcat8-4", "name": "Dry Seal", "url": "productdetails.html?categoryId=cat8&productId=subcat8-4" }
+                    ]
+                },
+                {
+                    "id": "cat9",
+                    "category": "Fittings",
+                    "url": "#fittings",
+                    "subCategories": [
+                        { "id": "subcat9-1", "name": "Tube Fittings", "url": "productdetails.html?categoryId=cat9&productId=subcat9-1" },
+                        { "id": "subcat9-2", "name": "Precision Fittings", "url": "productdetails.html?categoryId=cat9&productId=subcat9-2" },
+                        { "id": "subcat9-3", "name": "Hose Fittings", "url": "productdetails.html?categoryId=cat9&productId=subcat9-3" }
+                    ]
+                },
+                {
+                    "id": "cat10",
+                    "category": "Hydraulic Rubber Hose",
+                    "url": "#hydraulic-rubber-hose",
+                    "subCategories": [
+                        { "id": "subcat10-1", "name": "Medium Pressure Thermo Plastic Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-1" },
+                        { "id": "subcat10-2", "name": "High Pressure Thermo Plastic Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-2" },
+                        { "id": "subcat10-3", "name": "Liquified Petroleum Gas (LPG) Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-3" },
+                        { "id": "subcat10-4", "name": "Steam Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-4" },
+                        { "id": "subcat10-5", "name": "Low Temperature Steam Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-5" },
+                        { "id": "subcat10-6", "name": "High Temperature Steam Hose - Single Wire", "url": "productdetails.html?categoryId=cat10&productId=subcat10-6" },
+                        { "id": "subcat10-7", "name": "High Temperature Steam Hose - Double Wire", "url": "productdetails.html?categoryId=cat10&productId=subcat10-7" },
+                        { "id": "subcat10-8", "name": "Oil Suction & Discharge Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-8" },
+                        { "id": "subcat10-9", "name": "Chemical Suction & Discharge Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-9" },
+                        { "id": "subcat10-10", "name": "Acid And Alkali Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-10" },
+                        { "id": "subcat10-11", "name": "Phosphoric Acid Suction & Discharge Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-11" },
+                        { "id": "subcat10-12", "name": "Carbon Free Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-12" },
+                        { "id": "subcat10-13", "name": "Sand / Shot Blasting & Cement Grouting Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-13" },
+                        { "id": "subcat10-14", "name": "Sand And Gravel Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-14" },
+                        { "id": "subcat10-15", "name": "Air, Pneumatic, Rock Drill Hose", "url": "productdetails.html?categoryId=cat10&productId=subcat10-15" },
+                        { "id": "subcat10-16", "name": "High Pressure Hydraulic Hose - R1", "url": "productdetails.html?categoryId=cat10&productId=subcat10-16" },
+                        { "id": "subcat10-17", "name": "High Pressure Hydraulic Hose - R2", "url": "productdetails.html?categoryId=cat10&productId=subcat10-17" },
+                        { "id": "subcat10-18", "name": "High Pressure Hydraulic Hose - R3", "url": "productdetails.html?categoryId=cat10&productId=subcat10-18" },
+                        { "id": "subcat10-19", "name": "High Pressure Hydraulic Hose - R4", "url": "productdetails.html?categoryId=cat10&productId=subcat10-19" },
+                        { "id": "subcat10-20", "name": "High Pressure Hydraulic Hose - 4SP Standard", "url": "productdetails.html?categoryId=cat10&productId=subcat10-20" },
+                        { "id": "subcat10-21", "name": "End Connections", "url": "productdetails.html?categoryId=cat10&productId=subcat10-21" }
+
+                    ]
+            }
+            ];
+               // Function to generate the HTML structure
                 
                 function generateHTML() {
                     const gridContainer = document.getElementById('grid-container');
                     menu.forEach(category => {
                                 const gridItem = document.createElement('div');
                                 gridItem.className = 'grid';
+                                gridItem.addEventListener('click', () => {
+                                window.location.href = `composit-hose.html?categoryId=${category.id}`;
+                                });
+
                                 const img = document.createElement('img');
                                      img.src = `/assets/images/metallic/sub${category.id}-1.png`;
                                        img.alt = `${category.category} image`;
+                                       img.href = `composit-hose.html?categoryId=${category.id}`;
     
                                 // gridItem.style.backgroundImage = `url('/assets/images/metallic/${subCategory.id}.png')`;
                                 gridItem.innerHTML = `
@@ -377,6 +457,7 @@
             </script>
             
         <div class="grid-container" id="grid-container">
+        </div>
 
 
         <!-- start service-section -->
@@ -392,7 +473,7 @@
                                 <div class="logo widget-title">
                                     <img src="assets/images/hofiexlogo.png" alt>
                                 </div>
-                                <p>Plot no. 143, 43, 76, Arab Compound, 93 Morland Road, Mumbai Central (East), Mumbai - 400008, India.</p>
+                                <p>Plot No. 14, 43, 76, Arab Compoud, 93 Morland Road, Mumbai Central East, Mumbai – 400008, India</p>
                                 <div class="social-icons">
                                     <ul>
                                         <li><a href="#"><i class="ti-facebook"></i></a></li>
@@ -410,16 +491,16 @@
                                     <h3>Usefull Links</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="#">About us</a></li>
+                                    <li><a href="about.html">About us</a></li>
+
                                     <li><a href="#">Our services</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Meet team</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+
+
                                 </ul>
                                 <ul>
                                     <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">FAQ</a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -429,10 +510,10 @@
                                     <h3>Our Address</h3>
                                 </div>
                                 <ul>
-                                    <li>Plot no. 143, 43, 76, Arab Compound, 93 Morland Road, Mumbai Central (East), Mumbai - 400008, India.</li>
-                                    <li><span>Phone:</span> +91 704575334</li>
-                                    <li><span>Email:</span> amir@hofiex.com</li>
-                                    <li><span>Office Time:</span> 10AM- 5PM</li>
+                                    <li>Plot No. 14, 43, 76, Arab Compoud, 93 Morland Road, Mumbai Central East, Mumbai – 400008, India</li>
+                                    <li><span>Phone:</span> +91 7045753344</li>
+                                    <li><span>Email:</span> info@hofiex.com</li>
+                                    <li><span>Office Time:</span> 10AM- 6PM</li>
                                 </ul>
                             </div>
                         </div>
@@ -465,7 +546,8 @@
                                 <ul>
                                     <li><a href="#">Privace & Policy</a></li>
                                     <li><a href="#">Terms</a></li>
-                                    <li><a href="#">About us</a></li>
+                                    <li><a href="about.html">About us</a></li>
+
                                     <li><a href="#">FAQ</a></li>
                                 </ul>
                             </div>
@@ -477,7 +559,6 @@
         <!-- end site-footer -->
 
 
-    </div>
     <!-- end of page-wrapper -->
 
 
