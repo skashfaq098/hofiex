@@ -42,6 +42,7 @@
     max-width: 1200px;
     margin: 20px auto;
     padding: 16px;
+    margin-top: 70px;
 }
 
 .grid {
@@ -67,6 +68,7 @@
 .grid h4 {
     margin: 10px 0;
     font-size: 18px;
+    color: black;
 }
 
 .grid a {
@@ -469,8 +471,9 @@ body {
                         img.alt = `${category.category} image`;
 
                         gridItem.innerHTML = `
-                            <p style="visibility: hidden;">Placeholder text for spacing</p>
-                        `;
+                                    <h4>${subCategory.name}</h4>
+                                    <p style="visibility: hidden;">Placeholder text for spacing</p>
+                                `;
                         gridContainer.appendChild(gridItem);
                         gridItem.appendChild(img);
                     }
