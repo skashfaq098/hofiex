@@ -80,12 +80,26 @@
         transform: scale(1.05); /* Scale up slightly on hover */
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance the shadow for a lifted effect */
     }
+    @media (max-width: 768px) {
+        .why-choose-grids .grid {
+
+            flex-basis: 100% !important; /* Two columns on tablets */
+        }
+    }
+
+    @media (max-width: 576px) {
+        .why-choose-grids .grid {
+            flex-basis: 100% !important; /* Full-width columns on mobile */
+            margin: 10px 0;
+        }
+    }
     .why-choose-section .why-choose-grids p {
             color: black !important;
         }
         .why-choose-section .why-choose-grids h3{
             color: black !important;
         }
+        
     </style>
    
 </head>
@@ -660,30 +674,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" style="display: flex;flex-wrap:wrap; justify-content: center; align-items: center;">
-                    <div class="col col-xs-12 ">
-                        <div class="why-choose-grids clearfix">
-                            <div class="grid">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="why-choose-grids" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+                            <div class="grid" style="flex-basis: calc(33.333% - 40px); text-align: center; margin: 10px;">
                                 <i class="fi flaticon-network-1"></i>
                                 <h3>Timely Delivery</h3>
                                 <p>We ensure your orders are delivered on time, every time, keeping your operations running smoothly.</p>
                             </div>
-                            <div class="grid">
+                            <div class="grid" style="flex-basis: calc(33.333% - 40px); text-align: center; margin: 10px;">
                                 <i class="fi flaticon-circular-label-with-certified-stamp"></i>
                                 <h3>Quality Products</h3>
                                 <p>Our products are crafted with precision, guaranteeing durability and superior performance.</p>
                             </div>
-                            <div class="grid">
+                            <div class="grid" style="flex-basis: calc(33.333% - 40px); text-align: center; margin: 10px;">
                                 <i class="fi flaticon-chip"></i>
                                 <h3>International Standards</h3>
-                                <p>We adhere to the highest global standards, ensuring top-notch quality and compliance.                                </p>
+                                <p>We adhere to the highest global standards, ensuring top-notch quality and compliance.</p>
                             </div>
-                            <div class="grid">
+                            <div class="grid" style="flex-basis: calc(33.333% - 40px); text-align: center; margin: 10px;">
                                 <i class="fi flaticon-24-hours"></i>
                                 <h3>Exceptional Customer Support</h3>
                                 <p>Our dedicated team is always available to assist you, ensuring a seamless experience from start to finish.</p>
                             </div>
-                            <div class="grid">
+                            <div class="grid" style="flex-basis: calc(33.333% - 40px); text-align: center; margin: 10px;">
                                 <i class="fi flaticon-24-hours"></i>
                                 <h3>3rd Party Quality Inspection Available</h3>
                                 <p>We facilitate 3rd Party quality Inspections for our products upon client request, ensuring they meet the required standards and specifications.</p>
@@ -691,6 +705,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div> <!-- end container -->
         </section>
         <!-- end why-choose-section -->
