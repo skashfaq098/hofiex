@@ -31,7 +31,6 @@
     <![endif]-->
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
@@ -43,7 +42,7 @@
         }
         h1 {
             text-align: center;
-            color: #333;
+            color: #000000;
             margin-bottom: 40px;
         }
         .certificates {
@@ -92,6 +91,58 @@
                 height: 300px;
             }
         }
+        .page-certification-title {
+  background: url("assets/images/certificationbanner.jpg") center center/cover no-repeat local;
+  width: 100%;
+  height: 430px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 991px) {
+  .page-certification-title {
+    height: 300px;
+  }
+}
+
+.page-certification-title .container {
+  height: 100%;
+  display: table;
+}
+
+@media screen and (min-width: 992px) {
+  .page-certification-title .container {
+    padding-top: 100px;
+  }
+}
+
+.page-certification-title .container > .row {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.page-certification-title h2 {
+  font-size: 55px;
+  font-size: 3.4375rem;
+  font-weight: 900;
+  color: #fff;
+  margin: 0.5em 0 0.30em;
+}
+
+@media (max-width: 991px) {
+  .page-certification-title h2 {
+    font-size: 45px;
+    font-size: 2.8125rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-title h2 {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
     </style>
    
 </head>
@@ -287,8 +338,8 @@
                         <div class="contact">
                             <div class="call">
                                 <i class="fi flaticon-call"></i>
-                                <p style="visibility: hidden;">Call us anytime</p>
-                                <h5 style="visibility: hidden;">+91 7045753344</h5>
+                                <p style="color: black;">Call us anytime</p>
+                                <h5 style="color: black">+91 7045753344</h5>
                             </div>
                             <a href="#" class="theme-btn">Contact Us</a>
                         </div>
@@ -296,32 +347,39 @@
                 </div><!-- end of container -->
             </nav>
         </header>
-        
+
+        <section class="page-certification-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <h2>Our Certifications</h2>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
         <!-- end of header -->
-        <div class="container">
-            <h1>Our Certifications</h1>
-            
+        <div class="container">            
             <div class="certificates">
                 <!-- Certificate 1 -->
                 <div class="certificate">
-                    <h2>Import Export Code -- A.A. Patel And Sons Certification</h2>
+                    <h2>Import Export Code</h2>
                     <iframe class="pdf-viewer" src="assets/images/clients/import.pdf"></iframe>
                 </div>
                 
                 <!-- Certificate 2 -->
                 <div class="certificate">
-                    <h2>Incorporation Certification</h2>
+                    <h2>Certificate Of Incorporation</h2>
                     <iframe class="pdf-viewer" src="assets/images/clients/Incorporation.pdf"></iframe>
                 </div>
                 
                 <!-- Certificate 3 -->
                 <div class="certificate">
-                    <h2>MSME Udhyam Certification</h2>
+                    <h2>MSME Udhyam Certificate</h2>
                     <iframe class="pdf-viewer" src="assets/images/clients/msme.pdf"></iframe>
                 </div>
 
                 <div class="certificate">
-                    <h2>GST Certification</h2>
+                    <h2>Goods and Services Certificate</h2>
                     <iframe class="pdf-viewer" src="assets/images/clients/gst.pdf"></iframe>
                 </div>
                 
@@ -389,7 +447,7 @@
                                 <div class="widget-title">
                                     <h3>Newsletter</h3>
                                 </div>
-                                <p>You will be notified when somthing new will be appear.</p>
+                                <p>You will be notified when somthing new will appear.</p>
                                 <form>
                                     <div class="input-1">
                                         <input type="email" class="form-control" placeholder="Email Address *" required>
